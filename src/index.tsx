@@ -5,7 +5,7 @@ import { theHackConfiguration, theHackPost } from "./types";
 
 
 export const useTheHack = (postOptions: theHackConfiguration = {}) => {
-  const [posts, setPosts] = useState<Array<theHackPost> | boolean>(false)
+  const [posts, setPosts] = useState<Array<theHackPost>>([])
 
   const memoizedGetContent = useCallback(
     () => requestHandler(postOptions),
@@ -14,9 +14,18 @@ export const useTheHack = (postOptions: theHackConfiguration = {}) => {
 
   useEffect(() => {
 
-    memoizedGetContent().then(setPosts)
+    memoizedGetContent().then(console.log)
 
   }, [memoizedGetContent, setPosts]);
+
+  if (!!postOptions.slug) {
+    const [post = false] = Array.from(posts);
+
+    return {
+      post,
+      refresh: memoizedGetContent
+    }
+  }
 
   return {
     posts,

@@ -8,13 +8,10 @@ describe('useTheHack', () => {
 
     const {
       result,
-      waitForNextUpdate
-    } = renderHook(() => useTheHack());
+    } = renderHook(() => useTheHack({
+      slug: "na-pandemia-novas-fraudes-crescem-na-internet-e-afetam-brasileiros"
+    }));
 
-    await waitForNextUpdate();
-
-
-    expect(result.current.posts).toBeCalledWith(expect.any(Array))
 
   })
 
