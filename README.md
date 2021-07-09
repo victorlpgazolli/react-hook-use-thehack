@@ -1,43 +1,37 @@
+# React Hook useTheHack()
+## Índice
 
-## Contents
-
-- [Motivation](#motivation)
-- [Features](#features)
-- [Contributions](#contributions)
-- [Installation](#installation)
+- [Motivação](#motivação)
+- [Funções](#funções)
+- [Instalação](#instalação)
 - [API](#api)
-  - [Component Utilities](#component-utilities)
-  - [Examples](#examples)
-  - [Inspiration](#inspiration)
-  - [License](#license)
+  - [Utilidades](#utilidades)
+  - [Exemplos](#exemplos)
+  - [Licença](#licença)
 
-## Motivation
+## Motivação
+Eu iniciei esse projeto para aprender mais sobre o funcionamento dos custom hooks do react, e também da criação de testes unitários.
+
+A escolha do blog no qual o projeto está baseado foi por acaso, não houve um motivo especial (apesar de eu gostar do blog).
 
 
-
-## Features
-
-- 
-
-## Contributions
-
-PRs are more than welcome. If you're planning to contribute please make sure to read the contributing guide: [CONTRIBUTING.md](https://github.com/rgommezz/react-native-offline/blob/master/CONTRIBUTING.md)
-
-## Installation
+## Funções
+- [x] Buscar o resumo dos posts do blog
+- [x] Buscar o conteúdo de 1 post
+- [] Buscar as categorias
+- [] Buscar o resumo dos posts por id de categoria
+## Instalação
 
 ```bash
-$ yarn add react-use-the-hack
-
-# Or if you use npm
 $ npm i react-use-the-hack
 ```
 
 ## API
 
-### Component Utilities
+### Utilidades
 
 ##### Props
-```js
+```typescript
 type theHackConfiguration = {
   baseUrl?: string;
   page?: number;
@@ -61,7 +55,7 @@ type theHackPost = {
 `slug`: Post unique identifier, used to get content from a specific post.
 
 
-##### Examples
+##### Exemplos
 
 
 ```jsx
@@ -73,7 +67,9 @@ import { useTheHack } from 'react-use-the-hack'
 const Posts = ({
   page: 2
 }) => {
-    const posts = useTheHack({
+    const {
+      posts
+    } = useTheHack({
       page // get summary from all posts in page 2
     })
 
@@ -104,7 +100,9 @@ const exampleSlug = "na-pandemia-novas-fraudes-crescem-na-internet-e-afetam-bras
 const Post = ({
   slug = exampleSlug
 }) => {
-    const { title, description } = useTheHack({
+    const {
+      post
+    } = useTheHack({
       slug // get content from one specific post
     })
 
@@ -120,6 +118,6 @@ export default App
 ```
 
 
-## License
+## Licença
 
 MIT © [Victor Gazolli](https://github.com/victorlpgazolli)
