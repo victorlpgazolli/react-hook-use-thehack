@@ -31,7 +31,6 @@ export default async ({
         const tags = $(".blog-tags-wrap").first().text().trim().split("\n\t\t\t\t\t")
 
         const authorProfileStyle = $(".blog-profile-image").attr("style");
-        console.log({ tags });
 
         const authorProfileImage = getImageFromStyleAttr(authorProfileStyle)
 

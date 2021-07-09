@@ -9,14 +9,14 @@ export default async ({
     const hasSlug = typeof slug === "string" && slug.length > 0;
 
     assert(
-        hasSlug,
+        !!hasSlug,
         "slug must be a string"
     );
 
     const hasBaseUrl = typeof baseUrl === "string" && baseUrl.length > 0;
 
     assert(
-        hasBaseUrl,
+        !!hasBaseUrl,
         "baseUrl must be a string"
     )
 

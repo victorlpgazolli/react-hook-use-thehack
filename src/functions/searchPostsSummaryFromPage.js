@@ -4,17 +4,17 @@ export default async ({
     baseUrl = require("../constants").baseUrl,
     page = 1,
 }) => {
-    const hasPage = Number.isFinite(+page) && +page > 1
+    const hasPage = Number.isFinite(+page) && +page > 0
 
     assert(
-        hasPage,
+        !!hasPage,
         "page must be a number"
     );
 
     const hasBaseUrl = typeof baseUrl === "string" && baseUrl.length > 0;
 
     assert(
-        hasBaseUrl,
+        !!hasBaseUrl,
         "baseUrl must be a string"
     )
 
