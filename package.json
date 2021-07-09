@@ -1,10 +1,10 @@
 {
-  "name": "react-use-the-hack",
+  "name": "react-hook-use-thehack",
   "version": "0.0.1",
-  "description": "Simple React Hook for scraping https://thehack.com.br",
+  "description": "React Custom Hook para consumo do blog https://thehack.com.br",
   "author": "victorlpgazolli",
   "license": "MIT",
-  "repository": "victorlpgazolli/react-use-the-hack",
+  "repository": "victorlpgazolli/react-hook-use-thehack",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -23,7 +23,6 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "@testing-library/react-hooks": "^7.0.1",
     "cherio": "^1.0.0-rc.2",
     "request": "^2.88.2"
   },
@@ -36,6 +35,7 @@
     "@babel/runtime": "^7.3.1",
     "@rollup/plugin-json": "^4.1.0",
     "@testing-library/react": "^11.2.5",
+    "@testing-library/react-hooks": "^7.0.1",
     "@types/jest": "^23.3.14",
     "@types/react": "^17.0.1",
     "@typescript-eslint/parser": "^1.4.2",
