@@ -18,12 +18,12 @@ A escolha do blog no qual o projeto está baseado foi por acaso, não houve um m
 ## Funções
 - [x] Buscar o resumo dos posts do blog
 - [x] Buscar o conteúdo de 1 post
-- [] Buscar as categorias
-- [] Buscar o resumo dos posts por id de categoria
+[] Buscar as categorias
+[] Buscar o resumo dos posts por id de categoria
 ## Instalação
 
 ```bash
-$ npm i react-use-the-hack
+$ npm i react-hook-use-thehack
 ```
 
 ## API
@@ -62,7 +62,7 @@ type theHackPost = {
 // Posts.js
 
 import React, { useState } from 'react'
-import { useTheHack } from 'react-use-the-hack'
+import { useTheHack } from 'react-hook-use-thehack'
 
 const Posts = ({
   page: 2
@@ -93,7 +93,7 @@ export default App
 // Post.js
 
 import React, { useState } from 'react'
-import { useTheHack } from 'react-use-the-hack'
+import { useTheHack } from 'react-hook-use-thehack'
 
 const exampleSlug = "na-pandemia-novas-fraudes-crescem-na-internet-e-afetam-brasileiros";
 
