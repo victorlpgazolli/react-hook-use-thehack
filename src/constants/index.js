@@ -1,0 +1,1 @@
+export const baseUrl = "https://thehack.com.br/"

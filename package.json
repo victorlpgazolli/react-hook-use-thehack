@@ -1,0 +1,59 @@
+{
+  "name": "react-use-the-hack",
+  "version": "0.0.1",
+  "description": "Simple React Hook for scraping https://thehack.com.br",
+  "author": "victorlpgazolli",
+  "license": "MIT",
+  "repository": "victorlpgazolli/react-use-the-hack",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
+    "test:watch": "react-scripts-ts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {
+    "@testing-library/react-hooks": "^7.0.1",
+    "cherio": "^1.0.0-rc.2",
+    "request": "^2.88.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/runtime": "^7.3.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^23.3.14",
+    "@types/react": "^17.0.1",
+    "@typescript-eslint/parser": "^1.4.2",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-scripts-ts": "^3.1.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.19.2",
+    "rollup-plugin-url": "^2.1.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^3.3.3333"
+  }
+}
