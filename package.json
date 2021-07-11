@@ -8,12 +8,9 @@
     "type": "git",
     "url": "git+https://github.com/victorlpgazolli/react-hook-use-thehack.git"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.tsx",
   "files": [
-    "dist"
+    "src"
   ],
   "bugs": {
     "url": "https://github.com/victorlpgazolli/react-hook-use-thehack/issues"
