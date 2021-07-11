@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/victorlpgazolli/react-hook-use-thehack.git"
   },
-  "main": "src/index.tsx",
+  "main": "src/index.js",
   "files": [
     "src"
   ],
