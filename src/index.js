@@ -1,11 +1,10 @@
 //@ts-check
 import { useCallback, useEffect, useState } from "react";
 import requestHandler from "./functions";
-import { theHackConfiguration, theHackPost } from "./types";
 
 
-export const useTheHack = (postOptions: theHackConfiguration = {}) => {
-  const [posts, setPosts] = useState<Array<theHackPost>>([])
+export const useTheHack = (postOptions) => {
+  const [posts, setPosts] = useState([])
 
   const memoizedGetContent = useCallback(
     () => requestHandler(postOptions),
