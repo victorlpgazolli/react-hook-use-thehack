@@ -13,7 +13,6 @@
   "jsnext:main": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "src",
     "dist"
   ],
   "bugs": {
