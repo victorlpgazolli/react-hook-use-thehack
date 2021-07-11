@@ -1,7 +1,6 @@
 import React from "react"
 import { useTheHack } from './index'
-import { act, renderHook } from "@testing-library/react-hooks"
-import { waitFor } from "@testing-library/react"
+import { renderHook } from "@testing-library/react-hooks"
 
 describe('useTheHack', () => {
   test('scraping thehack.com.br first page', async () => {

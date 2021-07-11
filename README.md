@@ -18,8 +18,6 @@ A escolha do blog no qual o projeto está baseado foi por acaso, não houve um m
 ## Funções
 - [x] Buscar o resumo dos posts do blog
 - [x] Buscar o conteúdo de 1 post
-[] Buscar as categorias
-[] Buscar o resumo dos posts por id de categoria
 ## Instalação
 
 ```bash

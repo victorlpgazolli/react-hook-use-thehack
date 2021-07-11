@@ -20,7 +20,8 @@
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "cherio": "^1.0.0-rc.2",
@@ -51,7 +52,7 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-typescript2": "^0.19.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-url": "^2.1.0",
     "ts-jest": "^22.4.6",
     "typescript": "^3.3.3333"

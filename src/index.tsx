@@ -14,7 +14,7 @@ export const useTheHack = (postOptions: theHackConfiguration = {}) => {
 
   useEffect(() => {
 
-    memoizedGetContent().then(console.log)
+    memoizedGetContent().then(setPosts)
 
   }, [memoizedGetContent, setPosts]);
 
